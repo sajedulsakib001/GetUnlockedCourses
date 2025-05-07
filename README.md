@@ -22,11 +22,11 @@ Follow these steps to set up and run the project on your local machine.
    In the same terminal, start the app by running:
    ```bash
    python main.py
+   ```
    or, if needed:
    ```bash
    python3 main.py
-
-
+   ```
     
   
    
