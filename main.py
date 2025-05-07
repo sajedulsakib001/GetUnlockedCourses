@@ -1,7 +1,6 @@
 import pdfplumber
 import re
 import json
-import os
 # Path to your PDF file
 pdf_path = "test.pdf"
 
@@ -28,8 +27,6 @@ def completed():
     
 #Get the Unlocked Courses Based on the Complated or Ongoig Courses    
 def getUnlocked(n) :
-    completed_courses = completed()
-    os.system('clear')
     data = []
     with open("CourseList.json", "r") as f:
         data = json.load(f)
@@ -53,6 +50,10 @@ def main():
         if 0 < n < 3:
             break
         else: print("\nWrong Input! Try again...\n")
+    print("Unlocked Courses:")
+    print("=====================================")
+    print("Course Code: Course Name")
+    print("=====================================")
     for a in getUnlocked(str(n)):
         print(a)
     
